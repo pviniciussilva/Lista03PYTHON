@@ -6,17 +6,22 @@
     e. Estado Civil: 's', 'c', 'v', 'd';'''
 
 nome = input('nome: ')
-while(nome[:3]):
+while(len(nome) < 3):
     print('nome invalido digite novamente')
+    nome = input('nome: ')
 Idade = int(input('Iforme sua idade: '))
-while(Idade < 0 and Idade < 150):
+while(Idade < 0 or Idade > 150):
     print('Idade invalida digite novamente')
+    Idade = int(input('Iforme sua idade: '))
 Salario = float(input('Iforme seu salario: '))
 while(Salario < 0):
     print('Salario invalido digite novamente')
+    Salario = float(input('Iforme seu salario: '))
 Sexo = input('Digite seu sexo "f" ou "m": ').lower()
 while(Sexo != 'f' and Sexo != 'm'):
     print('Sexo invalido digite novamente')
+    Sexo = input('Digite seu sexo "f" ou "m": ').lower()
 Estado_civil = input('Digite seu estado civil "s", "c", "v", "d": ').lower()
-while(Estado_civil != {"s", "c", "v", "d"}):
+while(Estado_civil not in ["s", "c", "v", "d"]):
     print('Estado civil invalido digite novamente')
+    Estado_civil = input('Digite seu estado civil "s", "c", "v", "d": ').lower()
