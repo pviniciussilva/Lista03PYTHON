@@ -6,5 +6,6 @@
        ...
        5 X 10 = 50'''
 num = int(input('Informe o número de qual tabuada você deseja: '))
+print(f'Tabuada de {num}:')
 for n in range(1, 11):
-  print(f'{n} x {num} = {n * num}')
+  print(f'{num} X {n} = {n * num}')
