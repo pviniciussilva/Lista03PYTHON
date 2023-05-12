@@ -4,3 +4,4 @@ for n in range(1, 6):
   numero = int(input(f'Informe o {n}° número: '))
   soma += numero 
 print(f'A soma dos número informados é {soma}')
+print(f'A media dos números informados é {soma / 5}')
